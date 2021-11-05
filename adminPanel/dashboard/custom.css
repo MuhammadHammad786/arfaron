@@ -1,0 +1,83 @@
+/* your styles go here */
+.nav#sidebar li a
+{
+    color: #fff !important;
+}
+
+.sBw
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input,
+select,
+textarea
+{
+    background: #1E1D2B !important;
+    border: none;
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    color: #fff;
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 4px;
+    outline: none;
+}
+
+input::placeholder
+{
+    color: #999;
+}
+
+/* input:focus
+{
+    background: #393c64 !important;
+    border: 2px solid #1E1D2B;
+    
+    padding: 10px 15px;
+} */
+
+
+.modal label
+{
+    margin-bottom: 2px;
+    margin-top: 15px;
+    color: #f6f2f2;
+}
+
+.edit
+{
+    color: #96c7f8;
+    margin-right: 5px;
+}
+
+.edit:hover
+{
+    color: #63a7eb;
+}
+
+table img
+{
+    width: 60px;
+    height: 60px;
+}
+
+table tr td,
+table tr th
+{
+    white-space: nowrap;
+}

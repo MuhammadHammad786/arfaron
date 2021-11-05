@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TrAfaron | Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="../adminPanel/dashboard/font.css">
+    <!-- Google fonts - Muli-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../adminPanel/dashboard/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../adminPanel/dashboard/custom.css">
+
+    <script src="https://kit.fontawesome.com/03e233b384.js" crossorigin="anonymous"></script>
+    <!-- Favicon-->
+</head>
+
+<body>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Art</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div>
+                            <label for="Art Image">Art Image</label>
+                            <input type="file" placeholder="Art Image" class="input">
+                        </div>
+                        <div>
+                            <label for="Art Name">Art Name</label>
+                            <input type="text" placeholder="Art Name" class="input">
+                        </div>
+                        <div>
+                            <label for="Art Category">Art Category</label>
+                            <input type="text" placeholder="Art Category" class="input">
+                        </div>
+                        <div>
+                            <label for="Art Price">Art Price($)</label>
+                            <input type="number" placeholder="Art Price" class="input">
+                        </div>
+                        <div>
+                            <label for="Art Details">Art Details</label>
+                            <input type="text" placeholder="Art Details" class="input">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">+ Add Art</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="navbar-header">
+                    <!-- Navbar Header--><a href="index.html" class="navbar-brand">
+                        <div class="brand-text brand-big visible text-uppercase"><strong
+                                class="text-primary">TrAfaron</strong></div>
+                        <div class="brand-text brand-sm">
+                            <strong class="text-primary">
+                                TrAfaron
+                            </strong>
+                        </div>
+                    </a>
+                    <!-- Sidebar Toggle Btn-->
+                    <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
+                </div>
+                <div class="right-menu list-inline no-margin-bottom">
+
+                    <!-- Log out-->
+                    <div class="list-inline-item logout">
+                        <a id="logout" href="login.html" class="nav-link">
+                            <span class="d-none d-sm-inline">
+                                Logout
+                                <i class="fas fa-sign-out-alt"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="d-flex align-items-stretch">
+        <!-- Sidebar Navigation-->
+        <nav id="sidebar">
+            <!-- Sidebar Header-->
+            <div class="sidebar-header d-flex align-items-center">
+                <div class="avatar"><img src="../assets/images/profile.png" alt="admin"
+                        class="img-fluid rounded-circle"></div>
+                <div class="title">
+                    <h1 class="h5">TrAfaron</h1>
+                    <p>Vendor</p>
+                </div>
+            </div>
+            <!-- Sidebar Navidation Menus-->
+            <ul class="list-unstyled">
+                <li><a href="./arts.html"> <i class="fa fa-product-hunt"></i>Arts</a></li>
+                <li><a href="./order.html"> <i class="fa fa-shopping-cart"></i>Orders</a></li>
+                <li><a href="login.html"> <i class="fas fa-sign-out-alt"></i>Logout </a></li>
+
+        </nav>
+        <!-- Sidebar Navigation end-->
+        <div class="page-content">
+            <div class="page-header">
+                <div class="container-fluid sBw">
+                    <h2 class="h5 no-margin-bottom">Order</h2>
+                </div>
+            </div>
+            
+            <section class="admin">
+                <div class="container-fluid">
+                    <div class="table-responsive" style="overflow-x: auto;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Art Image</th>
+                                    <th>Art Name</th>
+                                    <th>Art Category</th>
+                                    <th>Art Subcategory</th>
+                                    <th>Art Price</th>
+                                    <th class="detail_th">Art Details</th>
+                                    <th>View</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><img src="../assets/images/art1.jpg" alt=""></td>
+                                    <td>Palmwine Cup - Wood - Bena Lulua</td>
+                                    <td>Category</td>
+                                    <td>Sub Category</td>
+                                    <td>150$</td>
+                                    <td>lorem ipsum...</td>
+                                    <td>
+                                        <a href="../art_detail.html">
+                                            View Art
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="edit" data-toggle="modal" data-target="#editModal">
+                                            Edit
+                                        </a>
+                                        <a href="#">
+                                            Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__block block no-margin-bottom">
+                    <div class="container-fluid text-center">
+                        <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                        <p class="no-margin-bottom">2021 &copy; TrAfaron.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="../adminPanel/vendor/jquery/jquery.min.js"></script>
+    <script src="../adminPanel/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="../adminPanel/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../adminPanel/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="../adminPanel/vendor/chart.js/Chart.min.js"></script>
+    <script src="../adminPanel/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="../adminPanel/js/charts-home.js"></script>
+    <script src="../adminPanel/js/front.js"></script>
+</body>
+
+</html>

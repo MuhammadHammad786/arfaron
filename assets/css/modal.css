@@ -1,0 +1,122 @@
+
+/* modal css */
+#user .modal-content
+{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#user .modal-header,
+#user .modal-body
+{
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+    padding: 1rem 2rem !important;
+}
+
+#user .modal
+{
+    padding: 0px !important;
+}
+#user .modal-open #user .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px !important;
+}
+#user .modal-footer
+{
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+}
+#user .modal-footer .col-sm-6,
+#user .modal-footer .col-sm-12
+{
+    display: flex;
+    justify-content: center;
+    padding: .75rem;
+}
+#user .modal-footer a
+{
+    display: flex;
+    text-align: center;
+    color: #2A75FF;
+}
+
+.borderL
+{
+    border-left: 1px solid #ccc;
+}
+
+#user .modal-body .button
+{
+    width: 100%;
+}
+
+#user .modal-body .light
+{
+    text-align: center;
+}
+
+#user .modal-body button
+{
+    margin: 0px auto;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 8px 60px;
+    background: #8B5E38;
+    color: #fff;
+}
+
+.model-left
+{
+    background: #8B5E38;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+
+.model-left .borderBtn
+{
+    margin: 0px auto;
+    border-radius: 50px;
+    outline: none;
+    padding: 8px 60px;
+    margin-top: 12px;
+    width: fit-content;
+    background: transparent;
+    border: 2px solid #fff !important;
+    color: #fff;
+}
+
+body
+{
+    padding: 0px !important;
+}
+
+@media (min-width: 576px){
+#user .modal-dialog {
+    max-width: 55% !important;
+}
+}
+
+#user .modal .row{
+    margin: 0px !important;
+}
+
+a,button{
+    cursor: pointer;
+}
+
+#user .modal p{
+    color: #fff !important;
+}
+
+#error , #success{
+    transition: .4s ease all;
+}

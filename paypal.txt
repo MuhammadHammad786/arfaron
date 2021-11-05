@@ -1,0 +1,20 @@
+Good morning
+
+The link is  paypal.me/TRAFARON 
+
+You probably know this already but just in case: 
+https://developer.paypal.com/docs/business/checkout/set-up-standard-payments/integrate/
+
+
+admin@trafaron.com
+PaypalTrafaron@2021
+
+client id
+ASJfIDxANNSZkS-zH1nXYK4QDGKoqpvDJUQHsHRwr6rz25mB1LC6iUKDBqHG7L4CYRsiT2gnQeXwJa_T
+
+secret
+EBRl7pZtFzWR8Q4gB_VO_Fis13vyV7jk519IHbvPZCX0N81qZh6X6GYc5GnFZZePMglb67807eT7GsHG
+
+personal account
+sb-ehw4776903882@personal.example.com
+CtcZ)6yr
